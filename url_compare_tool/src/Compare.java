@@ -33,23 +33,29 @@ public class Compare {
         reader.close();
 
 
+        //find missing elements
+        list.removeAll(list2);
+        System.out.println(list);
+    }
+}
+
         // It should be overwritten
         //boolean hasPair = false;
         //while (!hasPair) {
 
-        String compareTo;
+        /*String compareTo;
         String compareWith;
             for (int i = 0; i < list.size(); i++) {
                 compareTo = list.get(i);
                 compareWith = list2.get(i);
                 if (compareTo.equals(compareWith)){
                     System.out.println(compareTo + " = " + compareWith);
+                } else {
+                    compareWith = list2.get(i+1);
                 }
             }
             }
 }
         //}
 
-
-
-
+         */
