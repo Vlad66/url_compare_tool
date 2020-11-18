@@ -33,19 +33,23 @@ public class Compare {
         reader.close();
 
 
-        // It should be overwritten 
+        // It should be overwritten
         //boolean hasPair = false;
         //while (!hasPair) {
+
         String compareTo;
         String compareWith;
-        for (int i = 0; i < list.size(); i++) {
-            compareTo = list.get(i);
-            compareWith = list2.get(i);
-            System.out.println(compareTo + compareWith);
-        }
-        //}
-    }
+            for (int i = 0; i < list.size(); i++) {
+                compareTo = list.get(i);
+                compareWith = list2.get(i);
+                if (compareTo.equals(compareWith)){
+                    System.out.println(compareTo + " = " + compareWith);
+                }
+            }
+            }
 }
+        //}
+
 
 
 
